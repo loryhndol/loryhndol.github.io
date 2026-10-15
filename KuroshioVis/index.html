@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KuroshioVis&mdash;SciVis Contest 2026</title>
+
+<!-- Pure HTML + CSS Single Page Academic Project Website -->
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: #1155cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.page { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+/* ==================== title ==================== */
+.header { padding: 58px 0 32px; text-align: center; }
+
+.title {
+  max-width: 830px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 1.42;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.authors {
+  margin: 24px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px 26px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.authors sup { font-weight: 400; color: #888888; }
+
+.organizations {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #555555;
+}
+.organizations sup { color: #888888; }
+.organizations span { margin: 0 9px; white-space: nowrap; }
+
+.rule {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* ==================== section ==================== */
+.section { padding: 30px 0 4px; }
+
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+.abstract {
+  margin: 0;
+  text-align: justify;
+}
+.abstract + .abstract { margin-top: 12px; }
+
+/* ==================== video ==================== */
+.video-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  color: #999999;
+  font-size: 13px;
+}
+
+/* ==================== downloads ==================== */
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.download {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 132px;
+  margin-bottom: 10px;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ==================== footer ==================== */
+.footer {
+  margin-top: 54px;
+  padding: 20px 0 44px;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #888888;
+}
+
+/* ==================== responsive ==================== */
+@media (max-width: 820px) {
+  .title { font-size: 24px; }
+  .authors { gap: 2px 18px; font-size: 15px; }
+  .downloads { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .header { padding: 38px 0 24px; }
+  .title { font-size: 20px; }
+  .downloads { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ============ title / authors / organizations ============ -->
+  <header class="header">
+    <h1 class="title">
+      KuroshioVis: Hypothesis-Driven Discovery of Mesoscale Air-Sea Interaction through Coarse-to-Fine Exploration
+    </h1>
+
+    <p class="authors">
+      <span>Yuanzhi Chen<sup>1</sup></span>
+      <span>Yiwei Lin<sup>1</sup></span>
+      <span>Xi Duan<sup>1</sup></span>
+      <span>Qingqing He<sup>1</sup></span>
+      <span>Ruiliang Xu<sup>1</sup></span>
+      <span>Yucheng Wang<sup>2</sup></span>
+      <span><a href="https://qiongzn.github.io/">Qiong Zeng</a><sup>1</sup></span>
+    </p>
+
+    <p class="organizations">
+      <span><sup>1</sup>Shandong University</span>
+      <span><sup>2</sup>Laoshan Laboratory</span>
+    </p>
+  </header>
+
+  <hr class="rule">
+
+  <!-- ============ Abstract ============ -->
+  <section class="section">
+    <h2>Abstract:</h2>
+    <p class="abstract">
+      Mesoscale air-sea interaction occurs throughout strong sea surface temperature fronts such as the Kuroshio Extension, 
+      but its strength is highly non-uniform and can be resolved only in kilometre-scale coupled simulations. The response of any single
+      eddy is weak relative to synoptic variability, so evidence supporting a hypothesis of systematic air-sea coupling must be accumulated
+       across many eddies rather than inferred from individual cases. We present KuroshioVis, a hypothesis-driven, coarse-to-fine 
+       visual analytics workflow. The coarse stage extracts and aligns mesoscale eddies into composite representations of their air-sea responses, 
+       and provides a global view for exploration. The fine stage investigates these responses through three coordinated views: the composite 
+       interface view, the cross-interface flow view, and the evidence matrix View. These coordinated views support air-sea coupling analysis 
+       from surface patterns to cross-interface dynamics and quantitative statistical evidence. We demonstrate the workflow using the coupled 
+       C1440-LLC2160 simulation of the 2026 SciVis Contest.
+    </p>
+  </section>
+
+  <!-- ============ video ============ -->
+  <section class="section">
+    <h2>Video:</h2>
+
+    <!-- [TODO] if video exists：
+
+         <video width="100%" controls poster="./images/poster.png">
+           <source src="./video.mp4" type="video/mp4">
+           Your browser does not support HTML5 video.
+         </video>
+
+    -->
+    <div class="video-frame">
+      Demo video &mdash; ./video.mp4
+    </div>
+  </section>
+
+  <!-- ============ Downloads ============ -->
+  <section class="section">
+    <h2>Downloads:</h2>
+
+    <div class="downloads">
+
+      <!-- [TODO] change href to <img src="./images/paper.png" alt="Paper"> -->
+      <div class="download">
+        <div class="thumb">
+          <img src="./images/paper.png" alt="Paper">
+        </div>
+        <a href="#">Paper</a>
+      </div>
+
+      <div class="download">
+        <div class="thumb">Code</div>
+        <a href="#">Code</a>
+      </div>
+
+      <div class="download">
+        <div class="thumb">Poster</div>
+        <a href="#">Poster</a>
+      </div>
+
+      <div class="download">
+        <div class="thumb">Slides</div>
+        <a href="#">Slides</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ footer ============ -->
+  <footer class="footer">
+    <p style="margin:0;">
+      KuroshioVis &middot; IEEE VIS 2026 SciVis Contest, Shandong University & Laoshan Laboratory
+    </p>
+    <p style="margin:0;">
+      Contact: <a href="mailto:qiong.zn@sdu.edu.cn">Qiong Zeng</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
