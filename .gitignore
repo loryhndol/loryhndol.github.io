@@ -1,0 +1,7 @@
+# KuroshioVis local-only assets (not uploaded to GitHub for now)
+KuroshioVis/assets/poster/
+KuroshioVis/assets/teaser/
+KuroshioVis/qr/
+
+.workbuddy/
+.screenshots/

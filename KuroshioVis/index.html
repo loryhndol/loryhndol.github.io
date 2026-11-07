@@ -79,16 +79,12 @@ a:hover { text-decoration: underline; }
 .abstract + .abstract { margin-top: 12px; }
 
 /* ==================== video ==================== */
-.video-frame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.video {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #f6f6f6;
+  height: auto;
+  background: #000000;
   border: 1px solid #e5e5e5;
-  color: #999999;
-  font-size: 13px;
 }
 
 /* ==================== downloads ==================== */
@@ -193,26 +189,19 @@ a:hover { text-decoration: underline; }
   <section class="section">
     <h2>Video:</h2>
 
-    <!-- [TODO] if video exists：
-
-         <video width="100%" controls poster="./images/poster.png">
-           <source src="./video.mp4" type="video/mp4">
-           Your browser does not support HTML5 video.
-         </video>
-
-    -->
-    <div class="video-frame">
-      Demo video &mdash; ./video.mp4
-    </div>
+    <video class="video" width="2530" height="1342" controls preload="metadata" playsinline>
+      <source src="./assets/demo/KuroshioVis-demo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
   </section>
 
-  <!-- ============ Downloads ============ -->
+  <!-- ============ Downloads (hidden until real assets are available) ============
+
   <section class="section">
     <h2>Downloads:</h2>
 
     <div class="downloads">
 
-      <!-- [TODO] change href to <img src="./images/paper.png" alt="Paper"> -->
       <div class="download">
         <div class="thumb">
           <img src="./images/paper.png" alt="Paper">
@@ -237,6 +226,8 @@ a:hover { text-decoration: underline; }
 
     </div>
   </section>
+
+  ============================================================================= -->
 
   <!-- ============ footer ============ -->
   <footer class="footer">
