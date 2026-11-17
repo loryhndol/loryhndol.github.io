@@ -1,7 +1,8 @@
-# KuroshioVis local-only assets (not uploaded to GitHub for now)
-KuroshioVis/assets/poster/
-KuroshioVis/assets/teaser/
+# KuroshioVis local-only assets
+# (poster/teaser are now published on the project page; qr/ stays local)
 KuroshioVis/qr/
+# oversized original poster image, web uses poster-preview.jpg instead
+KuroshioVis/assets/poster/Poster.jpg
 
 .workbuddy/
 .screenshots/

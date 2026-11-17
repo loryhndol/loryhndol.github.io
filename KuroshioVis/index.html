@@ -96,6 +96,23 @@ a:hover { text-decoration: underline; }
 }
 .abstract + .abstract { margin-top: 12px; }
 
+/* ==================== figures ==================== */
+.figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e5e5e5;
+}
+
+.caption {
+  margin: 10px auto 0;
+  max-width: 900px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555555;
+}
+
 /* ==================== video ==================== */
 .video {
   display: block;
@@ -209,6 +226,22 @@ a:hover { text-decoration: underline; }
     </p>
   </section>
 
+  <!-- ============ teaser ============ -->
+  <section class="section">
+    <h2>Teaser:</h2>
+
+    <img class="figure" src="./assets/teaser/teaser.jpg"
+         alt="KuroshioVis system overview: global view, composite interface view, cross-interface flow view, evidence matrix view and AI-assisted reasoning">
+    <p class="caption">
+      <strong>Figure 1:</strong> KuroshioVis supports the hypothesis-driven visual analytics of ocean-atmosphere
+      coupling through a coarse-to-fine workflow. The system integrates coordinated views for global event
+      localization (a), multivariate composite visualization of the air-sea interface (b), cross-interface flow
+      visualization (c), and statistical evidence analysis (d), enabling users to identify candidate coupling
+      events, examine their physical structures, quantify statistical support, and interactively refine scientific
+      hypotheses through AI-assisted reasoning (e).
+    </p>
+  </section>
+
   <!-- ============ video ============ -->
   <section class="section" id="video">
     <h2>Video:</h2>
@@ -217,6 +250,19 @@ a:hover { text-decoration: underline; }
       <source src="./assets/demo/KuroshioVis-demo.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
+  </section>
+
+  <!-- ============ poster ============ -->
+  <section class="section" id="poster">
+    <h2>Poster:</h2>
+
+    <a href="./assets/poster/KuroshioVis-Poster-Final.pdf" target="_blank" rel="noopener">
+      <img class="figure" src="./assets/poster/poster-preview.jpg"
+           alt="IEEE VIS 2026 SciVis Contest poster of KuroshioVis">
+    </a>
+    <p class="caption">
+      IEEE VIS 2026 SciVis Contest poster. Click the image to open the full-resolution PDF.
+    </p>
   </section>
 
   <!-- ============ downloads ============ -->
@@ -234,7 +280,7 @@ a:hover { text-decoration: underline; }
 
       <div class="download">
         <div class="thumb">
-          <img src="./assets/poster/Poster.jpg" alt="Poster">
+          <img src="./assets/poster/poster-preview.jpg" alt="Poster">
         </div>
         <a href="./assets/poster/KuroshioVis-Poster-Final.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
       </div>

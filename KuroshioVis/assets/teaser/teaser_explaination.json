@@ -1,0 +1,4 @@
+{
+    "id": "Figure 1",
+    "content": "KuroshioVis supports the hypothesis-driven visual analytics of ocean-atmosphere coupling through a coarse-to-fine workflow. The system integrates coordinated views for global event localization (a), multivariate composite visualization of the air-sea interface (b), cross-interface flow visualization (c), and statistical evidence analysis (d), enabling users to identify candidate coupling events, examine their physical structures, quantify statistical support, and interactively refine scientific hypotheses through AI-assisted reasoning (e)."
+}
