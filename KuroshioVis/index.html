@@ -56,6 +56,24 @@ a:hover { text-decoration: underline; }
 .organizations sup { color: #888888; }
 .organizations span { margin: 0 9px; white-space: nowrap; }
 
+.links {
+  margin: 24px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.links a {
+  display: inline-block;
+  padding: 7px 20px;
+  border: 1px solid #1155cc;
+  border-radius: 22px;
+  color: #1155cc;
+  font-size: 15px;
+  font-weight: 600;
+}
+.links a:hover { background: #1155cc; color: #ffffff; text-decoration: none; }
+
 .rule {
   margin: 0;
   border: 0;
@@ -90,7 +108,7 @@ a:hover { text-decoration: underline; }
 /* ==================== downloads ==================== */
 .downloads {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
@@ -165,6 +183,12 @@ a:hover { text-decoration: underline; }
       <span><sup>1</sup>Shandong University</span>
       <span><sup>2</sup>Laoshan Laboratory</span>
     </p>
+
+    <p class="links">
+      <a href="https://arxiv.org/abs/2611.21154" target="_blank" rel="noopener">arXiv Paper</a>
+      <a href="#video">Video</a>
+      <a href="./assets/poster/KuroshioVis-Poster-Final.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
+    </p>
   </header>
 
   <hr class="rule">
@@ -186,7 +210,7 @@ a:hover { text-decoration: underline; }
   </section>
 
   <!-- ============ video ============ -->
-  <section class="section">
+  <section class="section" id="video">
     <h2>Video:</h2>
 
     <video class="video" width="2530" height="1342" controls preload="metadata" playsinline>
@@ -195,8 +219,7 @@ a:hover { text-decoration: underline; }
     </video>
   </section>
 
-  <!-- ============ Downloads (hidden until real assets are available) ============
-
+  <!-- ============ downloads ============ -->
   <section class="section">
     <h2>Downloads:</h2>
 
@@ -204,35 +227,30 @@ a:hover { text-decoration: underline; }
 
       <div class="download">
         <div class="thumb">
-          <img src="./images/paper.png" alt="Paper">
+          <img src="./assets/teaser/teaser.jpg" alt="Paper">
         </div>
-        <a href="#">Paper</a>
+        <a href="https://arxiv.org/abs/2611.21154" target="_blank" rel="noopener">Paper (arXiv)</a>
       </div>
 
       <div class="download">
-        <div class="thumb">Code</div>
-        <a href="#">Code</a>
+        <div class="thumb">
+          <img src="./assets/poster/Poster.jpg" alt="Poster">
+        </div>
+        <a href="./assets/poster/KuroshioVis-Poster-Final.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
       </div>
 
       <div class="download">
-        <div class="thumb">Poster</div>
-        <a href="#">Poster</a>
-      </div>
-
-      <div class="download">
-        <div class="thumb">Slides</div>
-        <a href="#">Slides</a>
+        <div class="thumb">Demo Video</div>
+        <a href="#video">Video (MP4)</a>
       </div>
 
     </div>
   </section>
 
-  ============================================================================= -->
-
   <!-- ============ footer ============ -->
   <footer class="footer">
     <p style="margin:0;">
-      KuroshioVis &middot; IEEE VIS 2026 SciVis Contest, Shandong University & Laoshan Laboratory
+      KuroshioVis &middot; IEEE VIS 2026 SciVis Contest, Shandong University &amp; Laoshan Laboratory &middot; <a href="https://arxiv.org/abs/2611.21154" target="_blank" rel="noopener">arXiv:2611.21154</a>
     </p>
     <p style="margin:0;">
       Contact: <a href="mailto:qiong.zn@sdu.edu.cn">Qiong Zeng</a>
